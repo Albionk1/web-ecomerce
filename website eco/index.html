@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GLOW STORE</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Akronim&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+<div class="container">
+ <div class="navbar">
+	<div class="logo">
+		<h1 class="logotext">Glow Store</h1>
+	</div>
+	<nav>
+		<ul id="MenuItems">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="products.html">Products</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	<img src="photos/menu.png" class="menu-icon" onclick="menutoggle()">
+ </div>
+ <div class="row">
+ 	<div class="col-2">
+ 		<h1>Make your own <br>t-shirt design </h1>
+ 		<p>we make your dream design to reality</p>
+ 		<a href="Products.html" class="btn">Shop Now</a>
+ 	</div>
+ 	<div class="col-3">
+ 		<img src="photos/bigpicture.png" >
+ 		<h1 class="text1">Your <br> Design</h1>
+ 	</div>
+ </div>
+</div>
+<div class="small-container">
+	<h2 class="Featured">Featured Products</h2>
+	<div class="row">
+		<div class="col-4">
+			<img src="photos/product1.jpg">
+			<h4 style=" margin-top: 60px";>Maic Glow</h4>
+			<p> 20€</p>
+		</div>
+		<div class="col-4">
+			<img src="photos/product2.jpg">
+			<h4>Maic Glow 2</h4>
+			<p> 15€</p>
+		</div>
+		<div class="col-4">
+			<img src="photos/product3.jpg">
+			<h4>Maic Takashi</h4>
+			<p> 15€ </p>
+		</div>
+		<div class="col-4">
+			<img src="photos/product4.jpg">
+			<h4>Maic Moncler</h4>
+			<p> 20€ </p>
+		</div>	
+	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<img src="photos/glowlogo.jpg">
+				</div>
+				<div class="footer-col-2">
+					<h3>Follow  us</h3>
+					<ul>
+						<li><a href="https://www.instagram.com/glowstore_ks/">Instagram</a></li>
+						<li><a href="">Facebook</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<p class="Copyright">Copyright 2021 - AlbionK</p>
+	</div>
+	
+</div>
+<script> 
+	var MenuItems = document.getElementById("MenuItems");
+	MenuItems.style.maxHeight = "0px";
+
+	function menutoggle(){
+		if(MenuItems.style.maxHeight =="0px")
+		{
+			MenuItems.style.maxHeight ="200px";
+		}
+		else{
+			MenuItems.style.maxHeight = "0px";
+		}
+	} 
+</script>
+</body>
+</html>
+

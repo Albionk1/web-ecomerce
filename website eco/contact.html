@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Products - </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Akronim&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+<div class="container">
+ <div class="navbar">
+	<div class="logo">
+		<h1 class="logotext">Glow Store</h1>
+	</div>
+	<nav>
+		<ul id="MenuItems">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="products.html">Products</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	
+	<img src="photos/menu.png" class="menu-icon" onclick="menutoggle()">
+ </div>
+ 
+</div>
+<div class="wrapper">
+    <form method="post" action="" class="ccform">
+    <div class="ccfield-prepend">
+        <span class="ccform-addon"><i class="fa fa-user fa-2x"></i></span>
+        <input class="ccformfield" type="text" placeholder="Full Name" required>
+    </div>
+    <div class="ccfield-prepend">
+        <span class="ccform-addon"><i class="fa fa-envelope fa-2x"></i></span>
+        <input class="ccformfield" type="text" placeholder="Email" required>
+    </div>
+    <div class="ccfield-prepend">
+        <span class="ccform-addon"><i class="fa fa-mobile-phone fa-2x"></i></span>
+        <input class="ccformfield" type="text" placeholder="Phone">
+    </div>
+     <div class="ccfield-prepend">
+        <span class="ccform-addon"><i class="fa fa-info fa-2x"></i></span>
+        <input class="ccformfield" type="text" placeholder="Subject" required>
+    </div>
+    <div class="ccfield-prepend">
+        <span class="ccform-addon"><i class="fa fa-comment fa-2x"></i></span>
+        <textarea class="ccformfield" name="comments" rows="8" placeholder="Message" required></textarea>
+    </div>
+    <div class="ccfield-prepend">
+     <input class="ccbtn" type="submit" value="Submit">
+        <script>
+window.alert ccbtn("This features is not working.If you want to contact me click one of two social media icons");
+
+</script>
+    </div>
+    </form>
+</div>
+
+
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<img src="photos/glowlogo.jpg">
+				</div>
+				<div class="footer-col-2">
+					<h3>Follow  us</h3>
+					<ul>
+						<li><a href="https://www.instagram.com/glowstore_ks/">Instagram</a></li>
+						<li><a href="">Facebook</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<p class="Copyright">Copyright 2021 - AlbionK</p>
+	</div>
+	
+</div>
+<script> 
+	var MenuItems = document.getElementById("MenuItems");
+	MenuItems.style.maxHeight = "0px";
+
+	function menutoggle(){
+		if(MenuItems.style.maxHeight =="0px")
+		{
+			MenuItems.style.maxHeight ="200px";
+		}
+		else{
+			MenuItems.style.maxHeight = "0px";
+		}
+	} 
+</script>
+</body>
+</html>
+
